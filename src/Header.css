@@ -1,0 +1,74 @@
+header {
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  top: 15px; /* Adjust as needed */
+  left: 50px; /* Adjust as needed */
+  width: 7%;
+  height: 15%
+}
+
+.address-container1{
+  color: white;
+  position: absolute;
+  top: 280px;
+  left:50px;
+}
+.address{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.header-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  margin-left: 1170px;
+  top: 170px;
+  cursor: pointer;
+}
+
+.navbar {
+  
+  overflow: hidden; /* Clear floats */
+  justify-content: flex-end;
+  position: absolute;
+  top: 1px;
+  right: 20px;
+}
+
+/* Styling the navbar items */
+.navbar li {
+  display: inline-block;
+  justify-content: flex-end;
+  padding: 10px;
+  list-style-type: none; /* Remove bullet points */
+  
+}
+
+/* Styling the navbar links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  
+}
+.navbar a.active {
+  border-color: white; /* Change border color for selected item */
+}
+.navbar a:hover {
+  border-color: white; /* Change border color on hover */
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent; /* Initially transparent border */
+  padding: 8px 12px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}

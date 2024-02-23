@@ -1,0 +1,98 @@
+/* alumni.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0; /* Remove default body margin */
+}
+
+.alumni-container {
+  width: calc(100% - 40px); /* Calculate width minus left and right margins */
+  max-width: 1300px;
+  margin: 20px auto; /* Add margin to center the container */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.alumni-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.alumni-header h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.alumni-header p {
+  font-size: 18px;
+}
+
+/* Section styling */
+.alumni-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.alumni-section-form {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.alumni-section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Link styling */
+.alumni-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.alumni-section a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+/* .footer {
+  text-align: center;
+  margin-top: 40px;
+} */
+
+.alumni-section p {
+  font-size: 16px;
+  line-height: 1.8; /* Adjust line height as needed */
+}

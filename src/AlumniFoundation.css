@@ -1,0 +1,64 @@
+/* SFSFoundation.css */
+.sfs-foundation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   margin-bottom: 30px;
+       
+      
+  }
+  .sfs-foundation-title,
+.sfs-foundation-description,
+.sfs-foundation-awards-description,
+.sfs-foundation-details-description {
+  line-height: 1.8; /* Set line spacing to 1.8 */
+}
+
+
+.sfs-foundation-awards{
+  margin-top: 30px;
+}
+.sfs-foundation-awards-description.l{
+    line-height: 1.8;
+}
+.sfs-foundation-awards-description.p{
+    line-height: 1.8;
+}
+  .sfs-foundation-content {
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .sfs-foundation-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sfs-foundation-description {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .sfs-foundation-initiatives,
+  .sfs-foundation-awards,
+  .sfs-foundation-details {
+    margin-bottom: 30px;
+  }
+  
+  .sfs-foundation-initiatives h3,
+  .sfs-foundation-awards h3,
+  .sfs-foundation-details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .sfs-foundation-awards-description,
+  .sfs-foundation-details-description {
+    text-align: justify;
+  }
+  
+  /* Add additional styling as needed */
+  

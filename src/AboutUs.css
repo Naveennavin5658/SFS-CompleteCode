@@ -1,0 +1,235 @@
+
+.image-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 100px; 
+    height: auto;
+    margin-right: 20px; /*  the space between images */
+    margin-left: 20px;
+
+  }
+  .image-container {
+    margin: 0 50px; 
+  }
+  .our-infrastructure {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    
+  }
+
+  .image-container2 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-zoom {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container2:hover .image-zoom {
+    transform: scale(1.1); /* You can adjust the scale factor to control the zoom level */
+  }
+ 
+  
+  /* Adjust styles as needed */
+  .iit-foundation{
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .vedic-maths{
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .abacus{
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  
+
+  .activity-images {
+    display: flex;
+    justify-content: center;
+    gap: 350px; /*  the gap between images */
+    margin-top: 10px; /*  some margin at the top */
+  }
+  
+  .activity-images img {
+    height: 200px; /* Adjust the height of the images */
+    width: auto;
+  }
+  .activity-images img {
+    height: 200px; /* Adjust the height of the images */
+    width: auto;
+    border: 1.5px solid grey; /*Add a solid border with a specific color */
+    border-radius: 8px; /* Optionally, add rounded corners */
+    padding: 5px; /* Optionally, add padding within the border */
+  }
+  . img {
+    width: 100px; /* Adjust the width of the images */
+    height: auto;
+    margin-right: 20px; /* Adjust the space between images */
+    /* border: 1.5px solid grey;  */
+    border-radius: 8px; /* Optionally, add rounded corners */
+    padding: 5px; /* Optionally, add padding within the border */
+  }
+  .activity-images-sports img {
+    height: 200px; /* Adjust the height of the images */
+    width: auto;
+    /* border: 1.5px solid grey;  */
+    border-radius: 18px; /* Optionally, add rounded corners */
+    padding: 5px; /* Optionally, add padding within the border */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .h1,.h2{
+    font-family: 'Roboto', sans-serif;
+  }
+  .image-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* To evenly space the images */
+    margin-top: 20px;
+    margin-left: 50px; /* Adjust the left margin */
+    margin-right: 50px; /* Adjust the right margin */
+  }
+  
+
+  .extra-curricular-activities h2 {
+    text-align: center; /* Center the headings */
+    margin-left: 50px; /* Add left margin */
+    margin-right: 50px; /*Add right margin*/
+    
+  }
+  
+  .iit-foundation,
+  .vedic-maths,
+  .abacus,
+  .abacus:last-child {
+    
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add space between sections */
+    
+  }
+  
+
+  .border-event{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    /* border: 1.5px solid grey;
+    border-radius: 15px; */
+    margin-bottom:50px ;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+
+  /* AboutUs.css */
+
+/* ... (existing styles) */
+
+/* Styling for each extracurricular activity section */
+.sports-events {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for a card effect */
+}
+
+.iit-foundation {
+  background-color: #edf7f3; /* Light green background */
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for a card effect */
+}
+
+.vedic-maths {
+  background-color: #fdebd0; /* Light yellow background */
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for a card effect */
+}
+
+.abacus {
+  background-color: #ffe6e6; /* Light pink background */
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for a card effect */
+}
+
+/* Styling for the headings of each extracurricular activity section */
+.sports-events h2,
+.iit-foundation h2,
+.vedic-maths h2,
+.abacus h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Styling for the paragraphs of each extracurricular activity section */
+.sports-events p,
+.iit-foundation p,
+.vedic-maths p,
+.abacus p {
+  text-align: justify;
+  color: #555;
+  line-height: 1.6;
+  
+  margin-bottom: 10px; /* Adjust margin as needed */
+
+}
+
+/* Styling for the images within each extracurricular activity section */
+.activity-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  bottom: 10px;
+}
+
+.activity-images img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+  /* Adding shadow to the images for a slight depth effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.content > div {
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
