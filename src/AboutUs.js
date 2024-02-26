@@ -7,7 +7,11 @@ import cycleStand from './/assests/cycleStand.JPG';
 import lib1 from ".//assests/lib1.JPG";
 import shuttle from ".//assests/shuttle.JPG";
 import lab2 from ".//assests/lab2.jpg";
-
+import a1 from ".//assests/a1.jpeg";
+import solarplant from ".//assests/solarplant.jpeg";
+import a2 from ".//assests/a2.jpeg";
+import a3 from ".//assests/a3.jpeg";
+import a4 from ".//assests/a4.jpeg";
 import playArea from './assests/playArea.JPG';
 import scienceLab from './assests/scienceLab.JPG';
 import vedicMaths1 from './assests/vm.jpeg';
@@ -27,14 +31,15 @@ function AboutUs() {
     const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     { src: basketBallCourt, alt: 'Basketball Court', label: 'Basketball Court' },
-    { src: classPic, alt: 'Classroom', label: 'Basketball Court' },
-    { src: computerLab, alt: 'Computer Lab', label: 'Basketball Court' },
-    { src: cycleStand, alt: 'Cycle Stand', label: 'Basketball Court' },
-    { src: playArea, alt: 'Play Area', label: 'Basketball Court' },
+    { src: classPic, alt: 'Classroom', label: 'Seminar Hall' },
+    { src: computerLab, alt: 'Computer Lab', label: 'Computer Lab' },
+    { src: cycleStand, alt: 'Cycle Stand', label: 'Cycle Stand' },
+    { src: playArea, alt: 'Play Area', label: 'Play Area' },
     { src: lib1, alt: 'Library', label: 'Library' },
     { src: g1, alt: 'Play Area', label: 'Shuttle Court' },
-    { src: lab2, alt: 'Lab Area', label: 'Lab Court' },
-    { src: scienceLab, alt: 'Science Lab', label: 'Basketball Court' }, // Add other images similarly
+    { src: lab2, alt: 'Lab Area', label: 'Laboratory' },
+    { src: scienceLab, alt: 'Science Lab', label: 'Science Lab' },
+    { src: solarplant, alt: 'Science Lab', label: 'Solar power supply' }, // Add other images similarly
   ];
 
   useEffect(() => {
@@ -66,6 +71,7 @@ function AboutUs() {
                 }}
                 className="image-zoom"
               />
+              <p className="image-label">{image.label}</p>
             </div>
             {/* <div className="label">
               <p>{image.label}</p>
@@ -84,7 +90,7 @@ function AboutUs() {
 
 
 <div className="activity-images-sports ">
-  <img src={g7} alt="Abacus 1" />
+  <img src={g7} alt="Abacus 1"/>
   <img src={g3} alt="Abacus 1" />
   <img src={g4} alt="Abacus 2" />
   <img src={g5} alt="Abacus 1" />
@@ -107,19 +113,6 @@ function AboutUs() {
 </div>
 </div>
 
-<div className='border-event'>
-<h2><u><b>VEDIC MATHS - ANCIENT WISDOM, MODERN SOLUTIONS</b></u></h2>
-<div className="vedic-maths">
-  <p>
-    Vedic Maths, stemming from ancient Indian methods, revolutionizes mathematical calculations by employing sutras and sub-sutras for rapid mental arithmetic. These techniques encompass diverse operations like multiplication, division, and roots, offering quicker alternatives to traditional methods. Vedic Maths enhances numerical agility, empowering individuals with confidence and efficiency in solving complex mathematical problems.
-  </p>
-</div>
-{/* Centre-aligned images for Vedic Maths */}
-<div className="activity-images image-container2 ">
-  <img src={vedicMaths1} alt="Vedic Maths 1" className="image-zoom" />
-  <img src={vedicMaths2} alt="Vedic Maths 2" className="image-zoom" />
-</div>
-</div>
 
 <div className='border-event'>
 <h2><u><b>ABACUS - EMPOWERING EXCELLENCE</b></u></h2>
@@ -130,10 +123,32 @@ function AboutUs() {
 </div>
 {/* Centre-aligned images for Abacus */}
 <div className="activity-images image-container2 ">
-  <img src={abacus1} alt="Abacus 1" className="image-zoom" />
-  <img src={abacus2} alt="Abacus 2" className="image-zoom" />
+  
+  <img src={a2} alt="Vedic Maths 2" className="image-zoom" />
+  {/* <img src={abacus2} alt="Abacus 2" className="image-zoom" /> */}
+  <img src={a3} alt="Vedic Maths 2" className="image-zoom" />
+  <img src={a4} alt="Vedic Maths 2" className="image-zoom" />
 </div>
 </div>
+
+
+<div className='border-event'>
+<h2><u><b>VEDIC MATHS - ANCIENT WISDOM, MODERN SOLUTIONS</b></u></h2>
+<div className="vedic-maths">
+  <p>
+    Vedic Maths, stemming from ancient Indian methods, revolutionizes mathematical calculations by employing sutras and sub-sutras for rapid mental arithmetic. These techniques encompass diverse operations like multiplication, division, and roots, offering quicker alternatives to traditional methods. Vedic Maths enhances numerical agility, empowering individuals with confidence and efficiency in solving complex mathematical problems.
+  </p>
+</div>
+{/* Centre-aligned images for Vedic Maths */}
+<div className="activity-images image-container2 ">
+  {/* <img src={vedicMaths1} alt="Vedic Maths 1" className="image-zoom" /> */}
+  <img src={vedicMaths2} alt="Vedic Maths 2" className="image-zoom" />
+  <img src={a1} alt="Vedic Maths 2" className="image-zoom" />
+  
+</div>
+</div>
+
+
 
 
       </div>

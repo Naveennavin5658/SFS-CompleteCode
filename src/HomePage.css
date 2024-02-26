@@ -1,10 +1,15 @@
 /* HomePage.css */
 
 /* Style for the main content container */
+
+.school-title-header{
+  margin-left: 600px;
+}
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 /* Style for each card-like section */
@@ -42,6 +47,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
+  margin-top: 50px;
 
 }
 
@@ -135,15 +141,15 @@
 
 /* Style for principle image */
 .principle img {
-  width: 300px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 /* Style for principle label */
 .principle p {
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   flex-basis: calc(50% - 20px); /* Adjust flex basis to 50% minus margin */
   margin: 10px; 

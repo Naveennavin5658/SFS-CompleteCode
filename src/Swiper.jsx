@@ -1,6 +1,7 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import './custom.css';
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,7 +14,8 @@ import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 //importing images
-
+import vision1 from ".//assests/vision2.png";
+import vision2 from ".//assests/vision.png"
 import FounderImage from ".//assests/founderImage.jpg";
 import patron from ".//assests/patron.jpg";
 import staffpic from "./assests/staff.jpg";
@@ -51,6 +53,7 @@ export default function App() {
               alt="Founder pic"
             />
             <p>
+              
               <b>
                 Born on 28th August 1790 at Chaumount, Savoy, France of peasant
                 family. <br />
@@ -102,48 +105,14 @@ export default function App() {
                 </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide><div className="s-head">
-          <h1>OUR TEACHING STAFF</h1>
-          <h4 style={{marginTop: "-10px"}}>
-          Founding a Legacy: SFS English Medium School, Tanuku
-          </h4>
-          </div>
-          <div className="content-s">
-            <img
-              src={staffpic}
-              style={{ height: "350px", width: "350px", borderRadius: "10%" }}
-              alt="Founder pic"
-            />
-            <p>
-                  <b>
-                    {" "}
-                    In 1983, SFS English medium school,Tanuku was started from
-                    class VI. It was a felt need to have an English medium
-                    school in the area. <br/>For many years Tanuku was the practical
-                    field for the post-novices for their missionary initiation.<br/>
-                    For one year a few students, of the minor seminary, were
-                    kept at Tanuku before starting the ,<br /> Nidadavole minor
-                    seminary. Fr. George Chirayil was the first Principal and
-                    Fr.Mathew Chavelil was <br/> the first correspondent of the
-                    school. Rev.Fr.Antony Mooenthottam was the provincial at the
-                    time <br/> of the establishment of the school. Initially the
-                    school building was situated within the campus of <br/>the
-                    present parish church. later it was shifted to the present
-                    sight at NGO’S colony about 750 metres <br/> away from the church
-                    campus. In 2012 SFS Nursery School was started at Ajram
-                    during the tenure of Fr.Jose Cheriyantharayil. SFS School at
-                    Tanuku became full pledged and now its strength is 837 <br/>
-                    students with 33 teaching staff and 10 non-teaching staff.
-                  </b>
-                </p>
-          </div></SwiperSlide>
+        
         <SwiperSlide><div className="s-head">
           <h1>OUR VISION</h1>
           
           </div>
           <div className="content-s">
             <img
-              src={mission}
+              src={vision2}
               style={{ height: "350px", width: "350px", borderRadius: "10%" }}
               alt="Founder pic"
             />
@@ -152,11 +121,11 @@ export default function App() {
                     A holistic society of compassionately human, spiritually
                     enlightened, <br/> intellectually awakened, professionally
                     skilled, socially committed and <br/>  culturally integrated
-                    persons, based on the values as lived and taught by <br/> Jesus
+                    persons, based on the values as lived and taught by Jesus
                     Christ and followed by Saint Francis de Sales. We equip the
-                    younger <br/>  generation with necessary life-skills to become:
-                    Catalysts of Social <br/> Transformation, Votaries of National
-                    Integration & Ambassadors of <br/>  Universal Brotherhood. We
+                    younger  generation with necessary life-skills to become:
+                    Catalysts of Social Transformation, Votaries of National
+                    Integration & Ambassadors of  Universal Brotherhood. We
                     foster a caring and humane society meant to <br/>  promote  the
                     marginalized.
                   </b>
@@ -168,13 +137,13 @@ export default function App() {
           </div>
           <div className="content-s">
             <img
-              src={m}
+              src={vision1}
               style={{ height: "350px", width: "350px", borderRadius: "10%" }}
               alt="Founder pic"
             />
            <p>
                   <b>
-                    To provide a conductive atmosphere for intellectual
+                    To provide a conducive atmosphere for intellectual
                     development.<br/> To facilitate conviction-based spiritual
                     formation.
                     <br></br>To nurture a sense of the Divine and transcendence.
