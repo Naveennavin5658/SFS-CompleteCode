@@ -20,12 +20,11 @@ import FrMani from "./assests/Fr Mani Jacob.jpg";
 import FrVijay from "./assests/Fr Ch Vijay.jpg";
 import FrThomas from "./assests/Fr. Thomas.png";
 import Swiper from "./Swiper";
-import { alignProperty } from "@mui/material/styles/cssUtils";
 
 function HomePage() {
   return (
     <div>
-    <h1 className="school-title-header"><u>SFS School, Tanuku</u></h1>
+    <h1 className="text-center text-3xl font-bold py-4"><span className="underline">SFS School, Tanuku</span></h1>
       <Swiper />
       
       <main className="main-content">
