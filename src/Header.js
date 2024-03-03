@@ -13,6 +13,10 @@ import DrawerExample from "./DrawerExample";
 
 
 function Header() {
+
+  const activeRoute = ({isActive}) => {
+    return `text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer ${isActive ? "border border-white" : ""}`
+  };
   return (
     <header className="header relative">
         <nav className="absolute right-0 top-6 flex items-center justify-between w-full px-4 pl-10 nav1">
@@ -23,35 +27,34 @@ function Header() {
       />
           <ul className="ml-auto flex gap-5 w-fit">
             <li className="list-item">
-              <NavLink  to="/" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink exact to="/" className={activeRoute}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink  to="/about-us" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/about-us" className={activeRoute}>
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/gallery" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/gallery" className={activeRoute}>
                 Gallery
               </NavLink>
             </li>
             <li>
-              <NavLink to="/results" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/results" className={activeRoute}>
                 Results
               </NavLink>
             </li>
             <li>
-              <NavLink to="/alumni" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/alumni" className={activeRoute}>
                 Alumni
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/sfs-alumni-foundation"
-                activeClassName="border border-white"
-                className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer"
+                className={activeRoute}
               >
                 Alumni Foundation
               </NavLink>
