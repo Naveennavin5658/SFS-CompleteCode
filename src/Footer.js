@@ -3,7 +3,6 @@ import React from 'react';
 import logo from ".//assests/logo.png";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
 import {FiMapPin, FiPhoneCall} from "react-icons/fi"
 import { TbDeviceLandlinePhone} from "react-icons/tb"
 import { SiGmail } from "react-icons/si";
@@ -46,7 +45,7 @@ function Footer() {
       </div>
       <div className="footer-right">
       <a href="https://www.instagram.com/" rel="noreferrer" target={"_blank"}><LuInstagram size={40} color="black" /></a>
-      <a href="https://www.instagram.com/" rel="noreferrer" target={"_blank"}><CiFacebook size={40} color="black" /></a>
+      
       <a href="https://www.instagram.com/" rel="noreferrer" target={"_blank"}><FaYoutube size={40} color="black" /></a>
       </div>
     </footer>

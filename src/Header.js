@@ -4,7 +4,6 @@ import "./Header.css";
 import logo from ".//assests/logo.png";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
 import sfsEdit1 from "./assests/sfsHome.jpg";
 import { FiMapPin, FiPhoneCall } from "react-icons/fi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
@@ -97,21 +96,15 @@ function Header() {
         
         <div className="flex items-center gap-5">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/sfs_tanuku_alumni?igsh=bnBxeTRjbjgxeTF4"
             rel="noreferrer"
             target={"_blank"}
           >
             <LuInstagram size={40} color="white" />
           </a>
+          
           <a
-            href="https://www.instagram.com/"
-            rel="noreferrer"
-            target={"_blank"}
-          >
-            <CiFacebook size={40} color="white" />
-          </a>
-          <a
-            href="https://www.instagram.com/"
+            href="https://www.youtube.com/channel/UCZcB3f-weG1sUnJEWAeQ1-w"
             rel="noreferrer"
             target={"_blank"}
           >

@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import finalstaff from "./assests/finalstaff.jpeg";
+import finalstaff from "./assests/finalstaff_1.jpeg";
 import FrSimon from ".//assests/Fr.Simon P.jpg";
 import FrPaul from "./assests/Fr. Paul Theneth.jpg";
 import FrMathew from "./assests/Fr. Mathew M.jpg";

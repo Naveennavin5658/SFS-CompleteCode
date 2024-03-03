@@ -17,7 +17,6 @@ import logo from ".//assests/logo.png";
 import "./Header.css";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
 const DrawerExample = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -120,22 +119,16 @@ const DrawerExample = () => {
               </VStack>
             </DrawerBody>
             <DrawerFooter style={{gap: "20px"}}>
+           
             <a
-            href="https://www.instagram.com/"
-            rel="noreferrer"
-            target={"_blank"}
-          >
-            <CiFacebook size={30} />
-          </a>
-            <a
-            href="https://www.instagram.com/"
+            href="https://www.youtube.com/channel/UCZcB3f-weG1sUnJEWAeQ1-w"
             rel="noreferrer"
             target={"_blank"}
           >
             <FaYoutube size={30} />
           </a>
             <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/sfs_tanuku_alumni?igsh=bnBxeTRjbjgxeTF4"
             rel="noreferrer"
             target={"_blank"}
           >
