@@ -27,7 +27,6 @@ function Results() {
         setStatsData(statsResponse.data);
         setToppersData(toppersResponse.data);
         setStudentsData(allStudentsResponse.data);
-        
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -40,12 +39,11 @@ function Results() {
 
   const handleYearChange = (event) => {
     setSelectedYear(event.target.value);
-    console.log(studentsData)
   };
 
   return (
     <div className="results-container">
-      <h1 className="results-heading" style={{ textAlign: "center", marginTop: "30px", fontSize: "20px",marginBottom: "20px" }}>
+      <h1 className="results-heading" style={{ textAlign: "center" }}>
         <u>RESULTS</u>
       </h1>
       <div className="year-container">

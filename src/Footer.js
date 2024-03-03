@@ -4,12 +4,17 @@ import logo from ".//assests/logo.png";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
+import sfsEdit1 from "./assests/sfsHome.jpg";
 import {FiMapPin, FiPhoneCall} from "react-icons/fi"
 import { TbDeviceLandlinePhone} from "react-icons/tb"
 import { SiGmail } from "react-icons/si";
 import './Footer.css'; 
 
 function Footer() {
+  const openLinkInNewTab = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <footer className="footer">
       <div className="footer-left">

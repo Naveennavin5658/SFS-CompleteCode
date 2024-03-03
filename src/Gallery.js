@@ -67,8 +67,6 @@ function Gallery() {
         <select id="year-dropdown" className="year-dropdown" onChange={handleYearChange} value={selectedYear}>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
-          <option value="2021">2021</option>
-          <option value="2020">2020</option>
         </select>
       </div>
 
@@ -85,9 +83,9 @@ function Gallery() {
                 </button>
               )}
             </div>
-    <div className="image-carousel-gallery">
+    <div className="image-carousel">
   {(selectedEvent === eventName ? imageUrls[selectedEvent] : images || []).map((imageUrl, index) => (
-    <div key={index} className="image-container-6">
+    <div key={index} className="image-container6">
       <img
         src={imageUrl}
         alt={`Gallery ${index}`}

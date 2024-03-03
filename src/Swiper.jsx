@@ -1,16 +1,26 @@
 import React from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import './custom.css';
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import "./swiper.css";
+
+// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+//importing images
 import vision1 from ".//assests/vision2.png";
 import vision2 from ".//assests/vision.png"
 import FounderImage from ".//assests/founderImage.jpg";
 import patron from ".//assests/patron.jpg";
-
+import staffpic from "./assests/staff.jpg";
+import mission from "./assests/mission.jpg"
+import m from "./assests/m.png"
 
 export default function App() {
   return (
@@ -32,7 +42,7 @@ export default function App() {
         <SwiperSlide>
           <div className="s-head">
           <h1>ABOUT OUR FOUNDER</h1>
-          <h4 >
+          <h4 style={{marginTop: "-10px"}}>
             Venerable FR. PETER MERMIER - The founder of M.S.F.S. Congregation
           </h4>
           </div>
@@ -67,7 +77,7 @@ export default function App() {
         <SwiperSlide>
         <div className="s-head">
           <h1>ABOUT OUR PATRON</h1>
-          <h4 >
+          <h4 style={{marginTop: "-10px"}}>
           The Short History of St. Francis de Sales (S.F.S)-(1567 -1622)
           </h4>
           </div>

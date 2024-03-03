@@ -28,54 +28,52 @@ import ten from "./assests/10.jpeg";
 export default function App() {
   return (
     
-      <div className="swiper-a">
-        <Swiper
-        spaceBetween={50}
+      <Swiper
+        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
+        pagination={{
+          clickable: true,
+        }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper-a"
+        className="mySwiper"
       >
         <SwiperSlide>
-          <img src={one}  className="swiper-image" alt="what" />
+          <img src={one} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={two}  className="swiper-image" alt="what" />
+          <img src={two} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={three} className="swiper-image"  alt="what" />
+          <img src={three} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={four}  className="swiper-image" alt="what" />
+          <img src={four} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={five}  className="swiper-image" alt="what" />
+          <img src={five} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={six} className="swiper-image" alt="what" />
+          <img src={six} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={seven}  className="swiper-image" alt="what" />
+          <img src={seven} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={eight}  className="swiper-image" alt="what" />
+          <img src={eight} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={nine} className="swiper-image" alt="what" />
+          <img src={nine} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={ten}  className="swiper-image" alt="what" />
+          <img src={ten} style={{height: "500px", width: "100%", objectFit: "contain"}} alt="what" />
         </SwiperSlide>
         
       </Swiper>
-      </div>
    
   );
 }
