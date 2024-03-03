@@ -1,7 +1,9 @@
 header {
   position: relative;
 }
-
+.nav-mobile{
+  display: none;
+}
 .header-logo {
   position: absolute;
   top: 15px; /* Adjust as needed */
@@ -71,4 +73,20 @@ header {
   border: 1px solid transparent; /* Initially transparent border */
   padding: 8px 12px;
   transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+@media only screen and (max-width: 830px){
+  .background-image{
+    height: 200px;
+    width: 100%;
+  }
+  .nav1{
+    display: none;
+  }
+  .nav-mobile{
+    display: inline;
+  }
+  .nav-m{
+    display: none;
+  }
 }
