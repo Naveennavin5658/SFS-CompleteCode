@@ -60,9 +60,7 @@
 .HomeSection1 .about-founder {
   width: 48%; /* Adjust width as needed */
 }
-.slider-phone{
-  display: none;
-}
+
 /* Additional styling for responsiveness or other specific needs */
 @media (max-width: 1400px) {
   .HomeSection1 .vision-mission,
@@ -155,15 +153,4 @@
   color: #333;
   flex-basis: calc(50% - 20px); /* Adjust flex basis to 50% minus margin */
   margin: 10px; 
-}
-.slider-mobile{
-  margin-top: 30px;
-}
-@media only screen and (max-width: 768px){
-  .slider-phone{
-    display: inline;
-  }
-  .slider-mobile{
-    display: none;
-  }
 }
