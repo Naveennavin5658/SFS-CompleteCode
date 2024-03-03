@@ -1,12 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-// import sfsSchool from "./assests/sfsSchool.JPG";
-
-import staffpic from "./assests/staff.jpg";
 import finalstaff from "./assests/finalstaff.jpeg";
-import patron from ".//assests/patron.jpg";
-import FounderImage from ".//assests/founderImage.jpg";
-import logo from ".//assests/logo.png";
 import FrSimon from ".//assests/Fr.Simon P.jpg";
 import FrPaul from "./assests/Fr. Paul Theneth.jpg";
 import FrMathew from "./assests/Fr. Mathew M.jpg";
@@ -14,26 +8,313 @@ import FrJose from "./assests/Fr. Jose Ch.jpg";
 import FrJerry from "./assests/Fr. Jerry Louis.png";
 import FrDhaman from "./assests/Fr. Dhaman K.jpg";
 import FrShyju from "./assests/Fr Shyju Chacko.png";
-import FrPJMathew from "./assests/Fr P Sundar Rao.jpg";
 import FrSundar from "./assests/Fr P Sundar Rao.jpg";
 import FrMani from "./assests/Fr Mani Jacob.jpg";
 import FrVijay from "./assests/Fr Ch Vijay.jpg";
 import FrThomas from "./assests/Fr. Thomas.png";
 import Swiper from "./Swiper";
+import FounderImage from ".//assests/founderImage.jpg";
+import patron from ".//assests/patron.jpg";
+import {
+  Button,
+  Text,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
+  Heading,
+} from "@chakra-ui/react";
 
 function HomePage() {
+  const {
+    isOpen: isOpenVision,
+    onOpen: onOpenVision,
+    onClose: onCloseVision,
+  } = useDisclosure();
+  const {
+    isOpen: isOpenMission,
+    onOpen: onOpenMission,
+    onClose: onCloseMission,
+  } = useDisclosure();
+  const finalRef = React.useRef(null);
   return (
     <div>
-    <h1 className="text-center text-3xl font-bold py-4"><span className="underline">SFS School, Tanuku</span></h1>
-      <Swiper />
-      
+      <h1 className="text-center text-3xl font-bold py-4 mt-12">
+        <span>
+          S.F.S School
+          <br /> Tanuku
+        </span>
+      </h1>
+      <div className="slider-mobile">
+        <Swiper />
+      </div>
       <main className="main-content">
-      
         <div className="content">
           <div className="HomeSection1">
-          <div className="our-principles">
-              <h1 className="section-heading" style={{fontSize: "2rem",paddingTop:"30px"}}>OUR PRINCIPALS</h1>
-              <hr style={{width: "400px", height: "2px", color: "black", backgroundColor: "black", marginTop: "-20px"}} />
+            <div className="slider-phone">
+              <div className="vision-mission">
+                <div className="vision">
+                  <h2>
+                    <u>
+                      <b>OUR VISION</b>
+                    </u>
+                  </h2>
+
+                  <p>
+                    <b>
+                      A holistic society of compassionately ....
+                      <br />
+                      <Button
+                        onClick={onOpenVision}
+                        bgColor={"teal"}
+                        color={"white"}
+                        padding={"7px"}
+                        marginTop={"10px"}
+                        borderRadius={"5px"}
+                      >
+                        Read More
+                      </Button>
+                      <Modal
+                        finalFocusRef={finalRef}
+                        isOpen={isOpenVision}
+                        onClose={onCloseVision}
+                      >
+                        <ModalOverlay
+                          style={{
+                            backgroundColor: "white",
+                          }}
+                        />
+                        <ModalContent>
+                          <ModalHeader
+                            style={{
+                              fontSize: "1.3rem",
+                              fontWeight: "bold",
+                              padding: "20px",
+                            }}
+                          >
+                            Our Vision
+                          </ModalHeader>
+                          <ModalBody>
+                            <Text style={{ padding: "20px" }}>
+                              A holistic society of compassionately human,
+                              spiritually enlightened, intellectually awakened,
+                              professionally skilled, socially committed and
+                              culturally integrated persons, based on the values
+                              as lived and taught by Jesus Christ and followed
+                              by Saint Francis de Sales. We equip the younger
+                              generation with necessary life-skills to become:
+                              Catalysts of Social Transformation, Votaries of
+                              National Integration & Ambassadors of Universal
+                              Brotherhood. We foster a caring and humane society
+                              meant to promote the marginalized.
+                            </Text>
+                          </ModalBody>
+
+                          <ModalFooter>
+                            <Button
+                              backgroundColor={"black"}
+                              padding={"10px"}
+                              borderRadius={"5px"}
+                              marginTop={"15px"}
+                              color={"white"}
+                              mr={3}
+                              onClick={onCloseVision}
+                            >
+                              Close
+                            </Button>
+                          </ModalFooter>
+                        </ModalContent>
+                      </Modal>
+                    </b>
+                  </p>
+                </div>
+                <div className="mission">
+                  <h2>
+                    <u>
+                      <b>OUR MISSION</b>
+                    </u>
+                  </h2>
+                  <p>
+                    <b>
+                      To provide a conductive atmosphere for intellectual
+                      development...
+                      <br/>
+                      <Button
+                        onClick={onOpenMission}
+                        bgColor={"teal"}
+                        color={"white"}
+                        padding={"7px"}
+                        borderRadius={"5px"}
+                      >
+                        Read More
+                      </Button>
+                      <Modal
+                        finalFocusRef={finalRef}
+                        isOpen={isOpenMission}
+                        onClose={onCloseMission}
+                      >
+                        <ModalOverlay
+                          style={{
+                            backgroundColor: "white",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        />
+                        <ModalContent>
+                          <ModalHeader
+                            style={{
+                              fontSize: "1.3rem",
+                              fontWeight: "bold",
+                              padding: "20px",
+                            }}
+                          >
+                            Our Mission
+                          </ModalHeader>
+                          <ModalBody>
+                            <Text style={{ padding: "20px" }}>
+                              To provide a conductive atmosphere for
+                              intellectual development. To facilitate
+                              conviction-based spiritual formation.<br></br>To
+                              nurture a sense of the Divine and transcendence.
+                              <br></br>
+                              To imbue the virtues of gentleness, compassion and
+                              optimism.
+                              <br></br>To impart authentic leadership training.
+                              <br></br>To instill wholesome professional ethics.
+                              <br></br>To encourage sports, games and work
+                              experience.
+                              <br></br>To inculcate healthy food habits.
+                              <br></br>To promote environmental consciousness.
+                              <br></br>To extend integral education to all.
+                              <br></br>
+                            </Text>
+                          </ModalBody>
+
+                          <ModalFooter>
+                            <Button
+                              backgroundColor={"black"}
+                              padding={"10px"}
+                              borderRadius={"5px"}
+                              color={"white"}
+                              mr={3}
+                              onClick={onCloseMission}
+                            >
+                              Close
+                            </Button>
+                          </ModalFooter>
+                        </ModalContent>
+                      </Modal>
+                    </b>
+                  </p>
+                </div>
+              </div>
+              <div className="patron-about-patron">
+                <div className="patron">
+                  <h2>
+                    <u>
+                      <b>OUR PATRON</b>
+                    </u>
+                  </h2>
+                  <img
+                    src={patron}
+                    style={{
+                      height: "350px",
+                      width: "100%",
+                    }}
+                    alt="school pic"
+                  />
+                </div>
+                <div className="about-patron">
+                  <h2>
+                    <u>
+                      <b>ABOUT OUR PATRON</b>
+                    </u>
+                  </h2>
+                  <h4>
+                    The Short History of St. Francis de Sales (S.F.S)-(1567 -
+                    1622)
+                  </h4>
+                  <p>
+                    <b>
+                      Born at Thorens, Savoy, France, on 21st August 1567.
+                      <br /> Ordined Priest 1593. Missionary in Chablais 1594 -
+                      98.
+                      <br /> Co-adjutor to the Bishop of Geneva 1599.
+                      <br /> Bishop of Geneva 1602.
+                      <br /> Died at Lynos, Dec 28th 1622.
+                      <br /> His writings : "Introduction to devout Life" (1609)
+                      and "Love of God" (1616).
+                      <br /> Declared blessed by Alexander VII Dec, 28th, 1661.{" "}
+                      <br />
+                      Canonized Saint-Alexander VII April 19th, 1665. <br />
+                      Doctor of the Church - Plus IX July 7th, 1877.{" "}
+                    </b>
+                  </p>
+                </div>
+              </div>
+
+              <div className="founder-about-founder">
+                <div className="founder">
+                  <h2>
+                    <u>
+                      <b>OUR FOUNDER</b>
+                    </u>
+                  </h2>
+                  <img
+                    src={FounderImage}
+                    style={{
+                      height: "350px",
+                      width: "100%",
+                    }}
+                    alt="Founder pic"
+                  />
+                </div>
+                <div className="about-founder">
+                  <h2>
+                    <u>
+                      <b>ABOUT OUR FOUNDER</b>
+                    </u>
+                  </h2>
+                  <h4>
+                    Venerable FR. PETER MERMIER - The founder of M.S.F.S.
+                    Congregation
+                  </h4>
+                  <p>
+                    <b>
+                      Born on 28th August 1790 at Chaumount, Savoy, France of
+                      peasant family. <br />
+                      Parents: Francis Mermier and Antointte Bastian. <br />
+                      Major Seminary Studies; at Chambery from 1802 - 1809.{" "}
+                      <br />
+                      Ordination: 1813. <br />
+                      Assistant Parish Priest: at Magland 1813. <br />
+                      Teacher: at Milan 1816. <br />
+                      Parish Priest: at Le Chatelard 1819. <br />
+                      The First Parish Mission: 1821. <br />
+                      Community Formation at La Roche, 1834. <br />
+                      Profession of Religious Vows:(The vows of stability) 1834.{" "}
+                      <br />
+                      Founded the Religious Congregation of the Daughters of the
+                      Cross at Chavanod in 1841. <br />
+                      Died: 30-9-1862, Declared Venerable by the Church in 1989.
+                    </b>{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="our-principles">
+              <h1
+                className="section-heading"
+                style={{ fontSize: "2rem", paddingTop: "30px" }}
+              >
+                OUR PRINCIPALS
+              </h1>
+
               <div className="principles-images">
                 <div className="principle">
                   <img src={FrSimon} alt="FrSimon" />
@@ -112,9 +393,9 @@ function HomePage() {
                   </u>
                 </h2>
                 <img
-                  src={finalstaff } 
+                  src={finalstaff}
                   style={{
-                    height: "400px",
+                    height: "180px",
                     width: "100%",
                   }}
                   alt="School pic"
@@ -151,8 +432,6 @@ function HomePage() {
                 </p>
               </div>
             </div>
-
-            
           </div>
         </div>
       </main>

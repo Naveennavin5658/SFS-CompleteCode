@@ -1,106 +1,110 @@
 .gallery-container {
-    text-align: center;
-  }
-  
-  
-  
-  .year-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 150px;
-    /* Other styles for container */
-  }
-  
- 
-  select.year-dropdown {
-    /* Your existing styles for the dropdown */
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #ADD8E6;
-    /* Additional styles as needed */
-  }
-  
-  .gallery-heading{
-    text-align: center;
-  }
-  .event-section {
-    margin-bottom: 30px; /* Adjust the spacing between sections */
-  }
-  
-  .event-heading {
-    text-align: left;
-     /* Align the heading to the left */
-     margin-left: 50px;
-  }
-  
-  .image-carousel {
-   
-    display: flex;
-    overflow-x: auto;
-  }
-  
-  
-  .event-image {
-    /* Increase the size of the images */
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    
-  }
-  
-  .view-all-button {
-    background-color: #DC1043; /* Apply the common color code */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Adjust padding */
-    border: none;
-    border-radius: 5px;
-     /* Align the button to the right */
-  }
+  text-align: center;
+}
 
-  .event-image {
-    /* Increase the size of the images */
-    width: 500px; /* Adjust the width as needed */
-    height: 500px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
-  
+.year-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-  /* Gallery.css */
 
-/* ... (existing styles) */
+select.year-dropdown {
+  /* Your existing styles for the dropdown */
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ADD8E6;
+  /* Additional styles as needed */
+}
 
-/* Styling for the loader */
-.loader {
-  height: 5px;
-  width: 100%;
+.gallery-heading{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
   margin-top: 10px;
+}
+.event-section {
+  margin-bottom: 30px; /* Adjust the spacing between sections */
+}
+
+.event-heading {
+  text-align: left;
+   /* Align the heading to the left */
+   margin-left: 50px;
+}
+
+.image-carousel-gallery {
+ 
+  display: flex;
+  overflow-x: auto;
+}
+
+
+.event-image {
+  width: 100%; 
+  height: 100%; 
+}
+
+.view-all-button {
+  background-color: #DC1043; /* Apply the common color code */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Adjust padding */
+  border: none;
   border-radius: 5px;
-  animation: loaderAnimation 1s infinite ease-in-out;
+   /* Align the button to the right */
+}
+
+.loader {
+height: 5px;
+width: 100%;
+margin-top: 10px;
+border-radius: 5px;
+animation: loaderAnimation 1s infinite ease-in-out;
 }
 
 @keyframes loaderAnimation {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
+0% {
+  width: 0%;
 }
-.image-container6{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+50% {
+  width: 50%;
 }
-.image-container6 img{
-width: 250px; 
-height: 250px;
+100% {
+  width: 100%;
+}
+}
+.image-container-6{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.image-container-6 img{
+width: 350px; 
+height: 350px;
 object-fit: contain;
 margin-right: 20px; /*  the space between images */
 margin-left: 20px;
 border-radius: 20px; /* Optionally, add rounded corners */
 padding: 5px; /* Optionally, add padding within the border */
+}
+
+@media only screen and (max-width: 768px){
+  .image-carousel-gallery{
+    width: 100%;
+    height: 100px;
+    overflow-y: hidden;
+  }
+  .event-image{
+    width: 200px;
+    height: 200px;
+  }
+  .image-container-6{
+    width: 100vw;
+  }
+  .image-container-6 img{
+    width: 500px;
+    height: 500px;
+  }
 }

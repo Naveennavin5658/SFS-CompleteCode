@@ -50,3 +50,18 @@
 .social-icon:focus {
   color: #DC0143;
 }
+
+@media only screen and (max-width: 768px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    margin-left: 0;
+  margin-right: 0;
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -7,21 +7,17 @@ import cycleStand from './/assests/cycleStand.JPG';
 import lib1 from ".//assests/lib1.JPG";
 import shuttle from ".//assests/shuttle.JPG";
 import lab2 from ".//assests/lab2.jpg";
-import a1 from ".//assests/a1.jpeg";
-import solarplant from ".//assests/solarplant.jpeg";
-import a2 from ".//assests/a2.jpeg";
-import a3 from ".//assests/a3.jpeg";
-import a4 from ".//assests/a4.jpeg";
+
 import playArea from './assests/playArea.JPG';
 import scienceLab from './assests/scienceLab.JPG';
 import vedicMaths1 from './assests/vm.jpeg';
 import vedicMaths2 from './assests/vm2.jpeg';
 import iit1 from './assests/iit2.png';
 import iit2 from './assests/itt1.jpeg';
-import abacus1 from './assests/abacus1.jpeg';
-import abacus2 from './assests/abacus2.jpeg';
+import a2 from "./assests/a2.jpeg";
+import a3 from "./assests/a3.jpeg";
+import a4 from "./assests/a4.jpeg";
 import g1 from './assests/DSC_0326.JPG';
-import g2 from './assests/DSC_0329.JPG';
 import g3 from './assests/DSC_0344.JPG';
 import g4 from './assests/DSC_0350.JPG';
 import g5 from './assests/DSC_0354.JPG';
@@ -31,15 +27,14 @@ function AboutUs() {
     const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     { src: basketBallCourt, alt: 'Basketball Court', label: 'Basketball Court' },
-    { src: classPic, alt: 'Classroom', label: 'Seminar Hall' },
-    { src: computerLab, alt: 'Computer Lab', label: 'Computer Lab' },
-    { src: cycleStand, alt: 'Cycle Stand', label: 'Cycle Stand' },
-    { src: playArea, alt: 'Play Area', label: 'Play Area' },
+    { src: classPic, alt: 'Classroom', label: 'Basketball Court' },
+    { src: computerLab, alt: 'Computer Lab', label: 'Basketball Court' },
+    { src: cycleStand, alt: 'Cycle Stand', label: 'Basketball Court' },
+    { src: playArea, alt: 'Play Area', label: 'Basketball Court' },
     { src: lib1, alt: 'Library', label: 'Library' },
     { src: g1, alt: 'Play Area', label: 'Shuttle Court' },
-    { src: lab2, alt: 'Lab Area', label: 'Laboratory' },
-    { src: scienceLab, alt: 'Science Lab', label: 'Science Lab' },
-    { src: solarplant, alt: 'Science Lab', label: 'Solar power supply' }, // Add other images similarly
+    { src: lab2, alt: 'Lab Area', label: 'Lab Court' },
+    { src: scienceLab, alt: 'Science Lab', label: 'Basketball Court' }, // Add other images similarly
   ];
 
   useEffect(() => {
@@ -64,18 +59,9 @@ function AboutUs() {
             <div className="image-container2">
               <img
                 src={image.src}
-                alt={image.alt}
-                style={{
-                  height: '300px',
-                  width: '100%',
-                }}
-                className="image-zoom"
+                className="image-zoom " alt='Images'
               />
-              <p className="image-label">{image.label}</p>
             </div>
-            {/* <div className="label">
-              <p>{image.label}</p>
-            </div> */}
           </div>
         ))}
          
@@ -85,12 +71,12 @@ function AboutUs() {
       <h2 style={{ textAlign: 'center' }}><u><b>EXTRA CURRICULAR ACTIVITIES</b></u></h2>
       <div className='border-event'>
 
-<h2><u><b>SPORTS EVENTS - VICTORY SPECTACLES</b></u></h2>
+<h2 style={{marginBottom: "20px"}}><u><b>SPORTS EVENTS - VICTORY SPECTACLES</b></u></h2>
 
 
 
 <div className="activity-images-sports ">
-  <img src={g7} alt="Abacus 1"/>
+  <img src={g7} alt="Abacus 1" />
   <img src={g3} alt="Abacus 1" />
   <img src={g4} alt="Abacus 2" />
   <img src={g5} alt="Abacus 1" />
@@ -99,7 +85,21 @@ function AboutUs() {
 </div>
 </div>
 <div className='border-event'>
-      <h2><u><b>IIT FOUNDATION - INNOVATING TOMORROW</b></u></h2>
+<h2 style={{marginBottom: "20px"}}><u><b>ABACUS - EMPOWERING EXCELLENCE</b></u></h2>
+<div className="abacus">
+  <p>
+    The ABACUS, an ancient calculation tool, transforms mathematical learning by utilizing beads or counters on rods to perform arithmetic operations swiftly. It fosters mental math skills, enhancing calculation speed and accuracy by visualizing numerical concepts. ABACUS training covers addition, subtraction, multiplication, and division, cultivating a strong foundation in mathematics. This tool empowers learners to perform complex calculations mentally, fostering numerical fluency and problem-solving abilities at an accelerated pace.
+  </p>
+</div>
+{/* Centre-aligned images for Abacus */}
+<div className="activity-images image-container2 ">
+<img src={a2} alt="Vedic Maths 2" className="image-zoom" />
+  <img src={a3} alt="Vedic Maths 2" className="image-zoom" />
+  <img src={a4} alt="Vedic Maths 2" className="image-zoom" />
+</div>
+</div>
+<div className='border-event'>
+      <h2 style={{marginBottom: "20px"}}><u><b>IIT FOUNDATION - INNOVATING TOMORROW</b></u></h2>
 <div className="iit-foundation">
   <p>
     The IIT foundation program, designed for students from class 6 to class 9, serves as a robust bridge between school education and competitive exams. With a keen focus on fundamental concepts in mathematics, science, and technology, this initiative nurtures analytical thinking and problem-solving skills. The program meticulously tracks students' progress, closely evaluating their performance in school and state-level examinations. As an encouragement, it awards prizes to recognize and motivate young achievers, fostering a culture of academic excellence and innovation.
@@ -113,27 +113,8 @@ function AboutUs() {
 </div>
 </div>
 
-
 <div className='border-event'>
-<h2><u><b>ABACUS - EMPOWERING EXCELLENCE</b></u></h2>
-<div className="abacus">
-  <p>
-    The ABACUS, an ancient calculation tool, transforms mathematical learning by utilizing beads or counters on rods to perform arithmetic operations swiftly. It fosters mental math skills, enhancing calculation speed and accuracy by visualizing numerical concepts. ABACUS training covers addition, subtraction, multiplication, and division, cultivating a strong foundation in mathematics. This tool empowers learners to perform complex calculations mentally, fostering numerical fluency and problem-solving abilities at an accelerated pace.
-  </p>
-</div>
-{/* Centre-aligned images for Abacus */}
-<div className="activity-images image-container2 ">
-  
-  <img src={a2} alt="Vedic Maths 2" className="image-zoom" />
-  {/* <img src={abacus2} alt="Abacus 2" className="image-zoom" /> */}
-  <img src={a3} alt="Vedic Maths 2" className="image-zoom" />
-  <img src={a4} alt="Vedic Maths 2" className="image-zoom" />
-</div>
-</div>
-
-
-<div className='border-event'>
-<h2><u><b>VEDIC MATHS - ANCIENT WISDOM, MODERN SOLUTIONS</b></u></h2>
+<h2 style={{marginBottom: "20px"}}><u><b>VEDIC MATHS - ANCIENT WISDOM, MODERN SOLUTIONS</b></u></h2>
 <div className="vedic-maths">
   <p>
     Vedic Maths, stemming from ancient Indian methods, revolutionizes mathematical calculations by employing sutras and sub-sutras for rapid mental arithmetic. These techniques encompass diverse operations like multiplication, division, and roots, offering quicker alternatives to traditional methods. Vedic Maths enhances numerical agility, empowering individuals with confidence and efficiency in solving complex mathematical problems.
@@ -141,10 +122,8 @@ function AboutUs() {
 </div>
 {/* Centre-aligned images for Vedic Maths */}
 <div className="activity-images image-container2 ">
-  {/* <img src={vedicMaths1} alt="Vedic Maths 1" className="image-zoom" /> */}
+  <img src={vedicMaths1} alt="Vedic Maths 1" className="image-zoom" />
   <img src={vedicMaths2} alt="Vedic Maths 2" className="image-zoom" />
-  <img src={a1} alt="Vedic Maths 2" className="image-zoom" />
-  
 </div>
 </div>
 
