@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.css";
+// import "./Header.css";
 import logo from ".//assests/logo.png";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
@@ -9,13 +9,15 @@ import sfsEdit1 from "./assests/sfsHome.jpg";
 import { FiMapPin, FiPhoneCall } from "react-icons/fi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { SiGmail } from "react-icons/si";
-import DrawerExample from "./DrawerExample";
-
 
 function Header() {
+
+  const activeRoute = ({isActive}) => {
+    return `text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer ${isActive ? "border border-white" : ""}`
+  };
   return (
     <header className="header relative">
-        <nav className="absolute right-0 top-6 flex items-center justify-between w-full px-4 pl-10 nav1">
+        <nav className="absolute right-0 top-6 flex items-center justify-between w-full px-4 pl-10">
         <img
         src={logo}
         alt="School Logo"
@@ -23,35 +25,34 @@ function Header() {
       />
           <ul className="ml-auto flex gap-5 w-fit">
             <li className="list-item">
-              <NavLink  to="/" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink exact to="/" className={activeRoute}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink  to="/about-us" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/about-us" className={activeRoute}>
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/gallery" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/gallery" className={activeRoute}>
                 Gallery
               </NavLink>
             </li>
             <li>
-              <NavLink to="/results" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/results" className={activeRoute}>
                 Results
               </NavLink>
             </li>
             <li>
-              <NavLink to="/alumni" activeClassName="border border-white" className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer">
+              <NavLink to="/alumni" className={activeRoute}>
                 Alumni
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/sfs-alumni-foundation"
-                activeClassName="border border-white"
-                className="text-white hover:border hover:border-white py-3 px-1.5 cursor-pointer"
+                className={activeRoute}
               >
                 Alumni Foundation
               </NavLink>
@@ -61,9 +62,14 @@ function Header() {
       <img
         className="background-image"
         src={sfsEdit1}
+        style={{
+          height: "520px",
+          width: "100%",
+        }}
         alt="sample"
       />
-      <div className="absolute bottom-0 flex flex-col md:flex-row items-start md:items-center justify-between w-full px-10 pb-5 nav-m">
+
+      <div className="absolute bottom-0 flex flex-col md:flex-row items-start md:items-center justify-between w-full px-10 pb-5">
         <div className="flex flex-col gap-5">
         <div className="flex items-center text-white gap-5">
           <FiMapPin size={25} />
@@ -116,7 +122,6 @@ function Header() {
           </a>
         </div>
       </div>
-      <DrawerExample/>
     </header>
   );
 }
