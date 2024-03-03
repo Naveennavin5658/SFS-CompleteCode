@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Alumni.css";
-import AlumniForm from "./AlumniForm";
+// import AlumniForm from "./AlumniForm";
 import Typewriter from "typewriter-effect";
 const Alumni = () => {
   return (
@@ -50,11 +50,7 @@ const Alumni = () => {
         {/* Include other content */}
       </div>
 
-      <div className="alumni-section-form">
-        <h2>Stay Connected and Contribute</h2>
-        <AlumniForm />
-        {/* Include registration link and social media links here */}
-      </div>
+     
 
       
       <div className="alumni-section">
