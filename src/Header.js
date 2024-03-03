@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import "./Header.css";
+import "./Header.css";
 import logo from ".//assests/logo.png";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
@@ -9,6 +9,8 @@ import sfsEdit1 from "./assests/sfsHome.jpg";
 import { FiMapPin, FiPhoneCall } from "react-icons/fi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { SiGmail } from "react-icons/si";
+import DrawerExample from "./DrawerExample";
+
 
 function Header() {
 
@@ -17,7 +19,7 @@ function Header() {
   };
   return (
     <header className="header relative">
-        <nav className="absolute right-0 top-6 flex items-center justify-between w-full px-4 pl-10">
+        <nav className="absolute right-0 top-6 flex items-center justify-between w-full px-4 pl-10 nav1">
         <img
         src={logo}
         alt="School Logo"
@@ -62,14 +64,9 @@ function Header() {
       <img
         className="background-image"
         src={sfsEdit1}
-        style={{
-          height: "520px",
-          width: "100%",
-        }}
         alt="sample"
       />
-
-      <div className="absolute bottom-0 flex flex-col md:flex-row items-start md:items-center justify-between w-full px-10 pb-5">
+      <div className="absolute bottom-0 flex flex-col md:flex-row items-start md:items-center justify-between w-full px-10 pb-5 nav-m">
         <div className="flex flex-col gap-5">
         <div className="flex items-center text-white gap-5">
           <FiMapPin size={25} />
@@ -122,6 +119,7 @@ function Header() {
           </a>
         </div>
       </div>
+      <DrawerExample/>
     </header>
   );
 }

@@ -142,3 +142,14 @@
   font-weight: bold;
   font-size: 1.2em; /* Increase the font size as needed */
 }
+@media only screen and (max-width: 768px){
+  .records-section{
+    width: 90%;
+  }
+  .record-card{
+    width: 100%;
+  }
+  .toppers-section{
+    width: 90%;
+  }
+}
