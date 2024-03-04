@@ -23,7 +23,7 @@ function Gallery() {
     const fetchImages = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`https://jwivwybinj.execute-api.ap-south-1.amazonaws.com/get_programs_for_year?year=${selectedYear}`);
+        const response = await axios.get(`https://b1amiu5tjd.execute-api.ap-south-1.amazonaws.com/get_programs_for_year?year=${selectedYear}`);
         setImageUrls(response.data.data || {});
       } catch (error) {
         console.error('Error fetching images:', error);
@@ -43,7 +43,7 @@ function Gallery() {
   const handleViewAll = async (eventName) => {
     try {
       setLoading(true);
-      const response = await axios.get(`https://t70fafpx43.execute-api.ap-south-1.amazonaws.com/fetch_images_for_event?year=${selectedYear}&event=${eventName}`);
+      const response = await axios.get(`https://4acruou0ud.execute-api.ap-south-1.amazonaws.com/fetch_images_for_event?year=${selectedYear}&event=${eventName}`);
       setImageUrls({ ...imageUrls, [eventName]: response.data || [] });
       setSelectedEvent(eventName);
     } catch (error) {
@@ -65,10 +65,9 @@ function Gallery() {
 
         </label>
         <select id="year-dropdown" className="year-dropdown" onChange={handleYearChange} value={selectedYear}>
+          <option value="2024">2024</option>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
-          <option value="2021">2021</option>
-          <option value="2020">2020</option>
         </select>
       </div>
 

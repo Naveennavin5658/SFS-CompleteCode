@@ -6,27 +6,22 @@ function Results() {
   const [selectedYear, setSelectedYear] = useState("2023");
   const [statsData, setStatsData] = useState({});
   const [toppersData, setToppersData] = useState({});
-  const [studentsData, setStudentsData] = useState([]);
   const [loading, setLoading] = useState(true); // State for loading
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true); // Set loading to true when fetching data starts
-
-        const allStudentsResponse = await axios.get(
-          `https://9qlddpyuxf.execute-api.ap-south-1.amazonaws.com/get_results_marks_of_year?year=${selectedYear}`
-        );
         const statsResponse = await axios.get(
-          `https://se3ur7o3b6.execute-api.ap-south-1.amazonaws.com/get_stats_in_year?year=${selectedYear}`
+          `https://oiy9c7y3rh.execute-api.ap-south-1.amazonaws.com/get_stats_in_year?year=${selectedYear}`
         );
         const toppersResponse = await axios.get(
-          `https://vtwmiuycb8.execute-api.ap-south-1.amazonaws.com/get_toppers_of_year?year=${selectedYear}`
+          `https://ls2xcdtitb.execute-api.ap-south-1.amazonaws.com/get_toppers_of_year?year=${selectedYear}`
         );
 
         setStatsData(statsResponse.data);
         setToppersData(toppersResponse.data);
-        setStudentsData(allStudentsResponse.data);
+        
         
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -40,7 +35,7 @@ function Results() {
 
   const handleYearChange = (event) => {
     setSelectedYear(event.target.value);
-    console.log(studentsData)
+    
   };
 
   return (
@@ -57,6 +52,7 @@ function Results() {
           className="year-dropdown"
           onChange={handleYearChange}
         >
+          <option value="2024">2023-2024</option>
           <option value="2023">2022-2023</option>
           <option value="2022">2021-2022</option>
           <option value="2021">2020-2021</option>
