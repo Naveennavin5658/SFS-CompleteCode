@@ -1,15 +1,15 @@
 import React, {useState, useEffect}from 'react';
 import './AboutUs.css';
-import basketBallCourt from './assests/basketBallCourt.JPG';
-import classPic from './/assests/class.JPG';
-import computerLab from './/assests/computerLab.JPG';
-import cycleStand from './/assests/cycleStand.JPG';
-import lib1 from ".//assests/lib1.JPG";
-import shuttle from ".//assests/shuttle.JPG";
+import basketBallCourt from './assests/basketBallCourt.jpg';
+import classPic from './/assests/class.jpg';
+import computerLab from './/assests/computerLab.jpg';
+import cycleStand from './/assests/cycleStand.jpg';
+import lib1 from ".//assests/lib1.jpg";
+import shuttle from ".//assests/shuttle.jpg";
 import lab2 from ".//assests/lab2.jpg";
 
-import playArea from './assests/playArea.JPG';
-import scienceLab from './assests/scienceLab.JPG';
+import playArea from './assests/playArea.jpg';
+import scienceLab from './assests/scienceLab.jpg';
 import vedicMaths1 from './assests/vm.jpeg';
 import vedicMaths2 from './assests/vm2.jpeg';
 import iit1 from './assests/iit2.png';
@@ -17,12 +17,12 @@ import iit2 from './assests/itt1.jpeg';
 import a2 from "./assests/a2.jpeg";
 import a3 from "./assests/a3.jpeg";
 import a4 from "./assests/a4.jpeg";
-import g1 from './assests/DSC_0326.JPG';
-import g3 from './assests/DSC_0344.JPG';
-import g4 from './assests/DSC_0350.JPG';
-import g5 from './assests/DSC_0354.JPG';
-import g6 from './assests/DSC_0370.JPG';
-import g7 from './assests/DSC_0409.JPG';
+import g1 from './assests/DSC_0326.jpg';
+import g3 from './assests/DSC_0344.jpg';
+import g4 from './assests/DSC_0350.jpg';
+import g5 from './assests/DSC_0354.jpg';
+import g6 from './assests/DSC_0370.jpg';
+import g7 from './assests/DSC_0409.jpg';
 function AboutUs() {
     const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
